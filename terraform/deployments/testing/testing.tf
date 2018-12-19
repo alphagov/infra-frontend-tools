@@ -44,8 +44,8 @@ resource "aws_security_group" "testing" {
   description = "testing"
 
   ingress {
-    from_port   = 8080
-    to_port     = 8080
+    from_port   = 3000
+    to_port     = 3000
     protocol    = "tcp"
     cidr_blocks = ["${split(",", var.office_cidrs)}"]
   }
